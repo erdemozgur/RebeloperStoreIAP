@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C91B73521D9872DC00CCFC05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B73511D9872DC00CCFC05 /* AppDelegate.swift */; };
+		C91B73541D9872DC00CCFC05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B73531D9872DC00CCFC05 /* ViewController.swift */; };
+		C91B73571D9872DC00CCFC05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91B73551D9872DC00CCFC05 /* Main.storyboard */; };
+		C91B73591D9872DC00CCFC05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91B73581D9872DC00CCFC05 /* Assets.xcassets */; };
+		C91B735C1D9872DC00CCFC05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91B735A1D9872DC00CCFC05 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C91B734E1D9872DC00CCFC05 /* RebeloperStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RebeloperStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91B73511D9872DC00CCFC05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C91B73531D9872DC00CCFC05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C91B73561D9872DC00CCFC05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C91B73581D9872DC00CCFC05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C91B735B1D9872DC00CCFC05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C91B735D1D9872DC00CCFC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C91B734B1D9872DC00CCFC05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C91B73451D9872DC00CCFC05 = {
+			isa = PBXGroup;
+			children = (
+				C91B73501D9872DC00CCFC05 /* RebeloperStore */,
+				C91B734F1D9872DC00CCFC05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C91B734F1D9872DC00CCFC05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C91B734E1D9872DC00CCFC05 /* RebeloperStore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C91B73501D9872DC00CCFC05 /* RebeloperStore */ = {
+			isa = PBXGroup;
+			children = (
+				C91B73511D9872DC00CCFC05 /* AppDelegate.swift */,
+				C91B73531D9872DC00CCFC05 /* ViewController.swift */,
+				C91B73551D9872DC00CCFC05 /* Main.storyboard */,
+				C91B73581D9872DC00CCFC05 /* Assets.xcassets */,
+				C91B735A1D9872DC00CCFC05 /* LaunchScreen.storyboard */,
+				C91B735D1D9872DC00CCFC05 /* Info.plist */,
+			);
+			path = RebeloperStore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C91B734D1D9872DC00CCFC05 /* RebeloperStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C91B73601D9872DC00CCFC05 /* Build configuration list for PBXNativeTarget "RebeloperStore" */;
+			buildPhases = (
+				C91B734A1D9872DC00CCFC05 /* Sources */,
+				C91B734B1D9872DC00CCFC05 /* Frameworks */,
+				C91B734C1D9872DC00CCFC05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RebeloperStore;
+			productName = RebeloperStore;
+			productReference = C91B734E1D9872DC00CCFC05 /* RebeloperStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C91B73461D9872DC00CCFC05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Rebeloper;
+				TargetAttributes = {
+					C91B734D1D9872DC00CCFC05 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = R252PR8AVU;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C91B73491D9872DC00CCFC05 /* Build configuration list for PBXProject "RebeloperStore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C91B73451D9872DC00CCFC05;
+			productRefGroup = C91B734F1D9872DC00CCFC05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C91B734D1D9872DC00CCFC05 /* RebeloperStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C91B734C1D9872DC00CCFC05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91B735C1D9872DC00CCFC05 /* LaunchScreen.storyboard in Resources */,
+				C91B73591D9872DC00CCFC05 /* Assets.xcassets in Resources */,
+				C91B73571D9872DC00CCFC05 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C91B734A1D9872DC00CCFC05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91B73541D9872DC00CCFC05 /* ViewController.swift in Sources */,
+				C91B73521D9872DC00CCFC05 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C91B73551D9872DC00CCFC05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91B73561D9872DC00CCFC05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C91B735A1D9872DC00CCFC05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91B735B1D9872DC00CCFC05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C91B735E1D9872DC00CCFC05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C91B735F1D9872DC00CCFC05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C91B73611D9872DC00CCFC05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R252PR8AVU;
+				INFOPLIST_FILE = RebeloperStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rebeloper.RebeloperStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C91B73621D9872DC00CCFC05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R252PR8AVU;
+				INFOPLIST_FILE = RebeloperStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rebeloper.RebeloperStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C91B73491D9872DC00CCFC05 /* Build configuration list for PBXProject "RebeloperStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91B735E1D9872DC00CCFC05 /* Debug */,
+				C91B735F1D9872DC00CCFC05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C91B73601D9872DC00CCFC05 /* Build configuration list for PBXNativeTarget "RebeloperStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91B73611D9872DC00CCFC05 /* Debug */,
+				C91B73621D9872DC00CCFC05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C91B73461D9872DC00CCFC05 /* Project object */;
+}
