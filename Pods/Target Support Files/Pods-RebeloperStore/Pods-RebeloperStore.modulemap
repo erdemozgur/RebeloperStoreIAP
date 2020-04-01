@@ -1,0 +1,6 @@
+framework module Pods_RebeloperStore {
+  umbrella header "Pods-RebeloperStore-umbrella.h"
+
+  export *
+  module * { export * }
+}

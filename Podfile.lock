@@ -1,0 +1,20 @@
+PODS:
+  - KeychainAccess (4.1.0)
+  - SwiftyStoreKit (0.15.0)
+
+DEPENDENCIES:
+  - KeychainAccess
+  - SwiftyStoreKit
+
+SPEC REPOS:
+  trunk:
+    - KeychainAccess
+    - SwiftyStoreKit
+
+SPEC CHECKSUMS:
+  KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
+  SwiftyStoreKit: 033d06b6f87955405d3f844a18a7687c2438592a
+
+PODFILE CHECKSUM: e121799e3912e604193c59080c2c92bbe0a3ed48
+
+COCOAPODS: 1.8.4
