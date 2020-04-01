@@ -1,14 +1,1190 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kSf-gt-lRH">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
+        <scene sceneID="wB4-Qm-0cJ">
+            <objects>
+                <viewController id="kSf-gt-lRH" customClass="MainViewController" customModule="RebeloperStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XYo-c4-dDF"/>
+                        <viewControllerLayoutGuide type="bottom" id="53z-ew-Mpd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yud-Zq-UrA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="CC8-Cr-1ej">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="3BE-Ee-DVx"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="338" id="Ac3-ch-S1f"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="156" id="Exj-Vo-I8I"/>
+                                    <constraint firstAttribute="width" constant="338" id="Rup-do-hbT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfy-mL-fBR" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="338" id="B4x-MI-fsB"/>
+                                    <constraint firstAttribute="width" constant="338" id="HGa-rF-chR"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="156" id="YTx-rh-XfM"/>
+                                    <constraint firstAttribute="height" constant="156" id="udv-zw-nE0"/>
+                                </constraints>
+                                <state key="normal" image="Renewable"/>
+                                <connections>
+                                    <segue destination="6Xp-af-2HM" kind="showDetail" id="Fi9-1V-80z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKo-Eh-RdA" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="CJ4-3o-CtC"/>
+                                    <constraint firstAttribute="width" constant="338" id="gmA-0h-lbZ"/>
+                                </constraints>
+                                <state key="normal" image="Regular" backgroundImage="Content"/>
+                                <connections>
+                                    <segue destination="A7y-gG-nzg" kind="showDetail" id="TND-BA-7Fb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncc-4k-lYh" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.21565845608711243" green="0.21570226550102234" blue="0.21565568447113037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Bsz-aP-QXo"/>
+                                    <constraint firstAttribute="height" constant="30" id="rvE-mO-b2Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Restore Purchases">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restorePurchasesButtonTapped:" destination="kSf-gt-lRH" eventType="touchUpInside" id="ThX-qU-l0U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61365205049514771" green="0.40175321698188782" blue="0.99815934896469116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CC8-Cr-1ej" firstAttribute="centerX" secondItem="Yud-Zq-UrA" secondAttribute="centerX" id="4kR-3Z-2f1"/>
+                            <constraint firstItem="CC8-Cr-1ej" firstAttribute="top" secondItem="XYo-c4-dDF" secondAttribute="bottom" constant="8" id="BUi-WI-DLG"/>
+                            <constraint firstItem="Ncc-4k-lYh" firstAttribute="top" secondItem="mKo-Eh-RdA" secondAttribute="bottom" constant="8" id="FBG-zS-Vqd"/>
+                            <constraint firstItem="Dfy-mL-fBR" firstAttribute="top" secondItem="CC8-Cr-1ej" secondAttribute="bottom" constant="8" id="SBc-vi-gJC"/>
+                            <constraint firstItem="Dfy-mL-fBR" firstAttribute="centerX" secondItem="Yud-Zq-UrA" secondAttribute="centerX" id="V8h-Ci-czE"/>
+                            <constraint firstItem="mKo-Eh-RdA" firstAttribute="top" secondItem="Dfy-mL-fBR" secondAttribute="bottom" constant="8" id="Vl6-Jv-x1P"/>
+                            <constraint firstItem="Ncc-4k-lYh" firstAttribute="centerX" secondItem="Yud-Zq-UrA" secondAttribute="centerX" id="nQd-yM-xDA"/>
+                            <constraint firstItem="mKo-Eh-RdA" firstAttribute="centerX" secondItem="Yud-Zq-UrA" secondAttribute="centerX" id="wde-Dp-6bR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zb7-Ec-L5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-708" y="-240"/>
+        </scene>
+        <!--Renewables Shop View Controller-->
+        <scene sceneID="HxO-TY-dJw">
+            <objects>
+                <viewController id="6Xp-af-2HM" customClass="RenewablesShopViewController" customModule="RebeloperStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mjy-CV-18A"/>
+                        <viewControllerLayoutGuide type="bottom" id="0gb-ml-HNN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lJV-eN-mwv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Renewable" translatesAutoresizingMaskIntoConstraints="NO" id="HsC-dE-fPk">
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="156" id="5Ae-I6-DVk"/>
+                                    <constraint firstAttribute="width" constant="338" id="z0Y-bh-C3r"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zgi-mW-ffy" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="BaK-N1-DN1"/>
+                                    <constraint firstAttribute="height" constant="30" id="XiF-Hb-SB2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="6Xp-af-2HM" eventType="touchUpInside" id="Kj4-Ll-l4u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD5-2N-bYt" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="bJs-Ol-j40"/>
+                                    <constraint firstAttribute="height" constant="156" id="eKQ-eB-aaD"/>
+                                </constraints>
+                                <state key="normal" image="Content"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="MTl-jd-f21"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RN5-Zc-O0C" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="I0C-eZ-c5W"/>
+                                    <constraint firstAttribute="height" constant="156" id="szU-ml-y7c"/>
+                                </constraints>
+                                <state key="normal" image="Content2"/>
+                                <connections>
+                                    <segue destination="BH5-Zf-2ym" kind="showDetail" id="9qa-co-Ngc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEi-6I-gTh" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.21565845610000001" green="0.21570226549999999" blue="0.2156556845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="WNc-qZ-ojf"/>
+                                    <constraint firstAttribute="height" constant="30" id="eYc-qi-yHQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Cancel Auto-renewable Subscriptions">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelAutoRenewableSubscriptionsButtonTapped:" destination="6Xp-af-2HM" eventType="touchUpInside" id="4BK-KD-Pq8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99894839525222778" green="0.70206385850906372" blue="0.0062993285246193409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HsC-dE-fPk" firstAttribute="top" secondItem="Mjy-CV-18A" secondAttribute="bottom" constant="8" id="9R8-ZI-Yhg"/>
+                            <constraint firstItem="RN5-Zc-O0C" firstAttribute="centerX" secondItem="lJV-eN-mwv" secondAttribute="centerX" id="9ya-CT-HLo"/>
+                            <constraint firstItem="ZD5-2N-bYt" firstAttribute="centerX" secondItem="lJV-eN-mwv" secondAttribute="centerX" id="CsM-Wl-UDr"/>
+                            <constraint firstItem="zgi-mW-ffy" firstAttribute="top" secondItem="Mjy-CV-18A" secondAttribute="bottom" constant="8" id="G55-Cb-iC7"/>
+                            <constraint firstItem="zgi-mW-ffy" firstAttribute="leading" secondItem="lJV-eN-mwv" secondAttribute="leadingMargin" id="STz-LW-vXu"/>
+                            <constraint firstItem="wEi-6I-gTh" firstAttribute="centerX" secondItem="lJV-eN-mwv" secondAttribute="centerX" id="XMN-Jw-K7e"/>
+                            <constraint firstItem="RN5-Zc-O0C" firstAttribute="top" secondItem="ZD5-2N-bYt" secondAttribute="bottom" constant="8" id="bQ5-1d-kht"/>
+                            <constraint firstItem="ZD5-2N-bYt" firstAttribute="top" secondItem="HsC-dE-fPk" secondAttribute="bottom" constant="8" id="k5O-lF-dvM"/>
+                            <constraint firstItem="wEi-6I-gTh" firstAttribute="top" secondItem="RN5-Zc-O0C" secondAttribute="bottom" constant="8" id="x4c-RP-qma"/>
+                            <constraint firstItem="HsC-dE-fPk" firstAttribute="centerX" secondItem="lJV-eN-mwv" secondAttribute="centerX" id="z4e-JQ-DXo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbQ-X0-Qoy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="-971"/>
+        </scene>
+        <!--Renewable Subscriptions Shop2 View Controller-->
+        <scene sceneID="AYg-Ms-xWn">
+            <objects>
+                <viewController id="BH5-Zf-2ym" customClass="RenewableSubscriptionsShop2ViewController" customModule="RebeloperStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qOn-C5-Ldk"/>
+                        <viewControllerLayoutGuide type="bottom" id="GmH-wB-sJu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wnY-IR-eeQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ContentLocked2" translatesAutoresizingMaskIntoConstraints="NO" id="SvR-1n-bA5">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="AUW-k1-utl"/>
+                                    <constraint firstAttribute="width" constant="338" id="kb4-WT-QFd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔒 Content Locked" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVy-ON-Hb4">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="IKA-zG-CQb"/>
+                                    <constraint firstAttribute="height" constant="21" id="USC-Zh-YqC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4Y3-18-ITV" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GuQ-ru-7yG"/>
+                                    <constraint firstAttribute="width" constant="56" id="NyE-5e-bYp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="BH5-Zf-2ym" eventType="touchUpInside" id="YgP-Lm-iEf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eat Donuts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJS-q0-Xa0">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3Xk-1e-Yp4"/>
+                                    <constraint firstAttribute="width" constant="343" id="Jsu-Il-wUH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All you can eat! A dream come true for donut lovers. Eat donuts each day, every day." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGh-7R-9vu">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="UfU-Bc-h7f"/>
+                                    <constraint firstAttribute="height" constant="63" id="uN6-TG-wf3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="w2p-b7-Lnh" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UfM-Tr-0Hv"/>
+                                    <constraint firstAttribute="width" constant="343" id="WEl-Ty-pUz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Buy Weekly Subscription">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseAutoRenewableSubscriptionButtonTapped1:" destination="BH5-Zf-2ym" eventType="touchUpInside" id="R8T-sO-Kjb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription availability date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dd1-mF-nvK">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="KhI-e1-XWS"/>
+                                    <constraint firstAttribute="height" constant="21" id="OVl-ih-8DL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42008143663406372" green="0.85073131322860718" blue="0.93131393194198608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dd1-mF-nvK" firstAttribute="centerX" secondItem="wnY-IR-eeQ" secondAttribute="centerX" id="1Ye-sD-Mg9"/>
+                            <constraint firstItem="4Y3-18-ITV" firstAttribute="top" secondItem="qOn-C5-Ldk" secondAttribute="bottom" constant="8" id="6Zf-Vh-Mll"/>
+                            <constraint firstItem="SvR-1n-bA5" firstAttribute="centerX" secondItem="wnY-IR-eeQ" secondAttribute="centerX" id="DS4-c7-bPR"/>
+                            <constraint firstItem="w2p-b7-Lnh" firstAttribute="top" secondItem="CGh-7R-9vu" secondAttribute="bottom" constant="8" id="S2G-IW-gcV"/>
+                            <constraint firstItem="4Y3-18-ITV" firstAttribute="leading" secondItem="wnY-IR-eeQ" secondAttribute="leadingMargin" id="Vei-EW-1b5"/>
+                            <constraint firstItem="Dd1-mF-nvK" firstAttribute="top" secondItem="w2p-b7-Lnh" secondAttribute="bottom" constant="8" id="XNc-nZ-oHv"/>
+                            <constraint firstItem="IJS-q0-Xa0" firstAttribute="centerX" secondItem="wnY-IR-eeQ" secondAttribute="centerX" id="YiZ-JZ-yOf"/>
+                            <constraint firstItem="CGh-7R-9vu" firstAttribute="top" secondItem="IJS-q0-Xa0" secondAttribute="bottom" constant="8" id="aLi-NV-bG4"/>
+                            <constraint firstItem="IJS-q0-Xa0" firstAttribute="top" secondItem="SvR-1n-bA5" secondAttribute="bottom" constant="8" id="bpN-kl-hdh"/>
+                            <constraint firstItem="CGh-7R-9vu" firstAttribute="centerX" secondItem="wnY-IR-eeQ" secondAttribute="centerX" id="ffD-uY-GtV"/>
+                            <constraint firstItem="SVy-ON-Hb4" firstAttribute="centerX" secondItem="wnY-IR-eeQ" secondAttribute="centerX" id="nwD-9d-hIQ"/>
+                            <constraint firstItem="SvR-1n-bA5" firstAttribute="top" secondItem="qOn-C5-Ldk" secondAttribute="bottom" constant="37" id="uPn-ZN-jnj"/>
+                            <constraint firstItem="SVy-ON-Hb4" firstAttribute="top" secondItem="qOn-C5-Ldk" secondAttribute="bottom" constant="8" id="uj5-0e-YUc"/>
+                            <constraint firstItem="w2p-b7-Lnh" firstAttribute="centerX" secondItem="wnY-IR-eeQ" secondAttribute="centerX" id="ygD-mL-IW8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="autoRenewableSubscriptionDescription" destination="CGh-7R-9vu" id="gHn-zw-8rU"/>
+                        <outlet property="autoRenewableSubscriptionTitle" destination="IJS-q0-Xa0" id="YeC-hx-fhS"/>
+                        <outlet property="contentImageView" destination="SvR-1n-bA5" id="O89-YW-Inp"/>
+                        <outlet property="contentStatusLabel" destination="SVy-ON-Hb4" id="FMU-oa-EhL"/>
+                        <outlet property="subscriptionAvailabilityDateLabel1" destination="Dd1-mF-nvK" id="HNK-eA-i2O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JiP-QR-Cci" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="-971"/>
+        </scene>
+        <!--Regular Shop View Controller-->
+        <scene sceneID="RR3-xV-XIW">
+            <objects>
+                <viewController id="A7y-gG-nzg" customClass="RegularShopViewController" customModule="RebeloperStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Noa-Wq-3nB"/>
+                        <viewControllerLayoutGuide type="bottom" id="xn4-Fa-zTH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3f8-5w-WKb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Regular" translatesAutoresizingMaskIntoConstraints="NO" id="h2n-tJ-1Mv">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="FF1-O4-fGm"/>
+                                    <constraint firstAttribute="width" constant="169" id="gSn-5q-RBn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cSV-Wa-Ru7" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2wy-Bo-euK"/>
+                                    <constraint firstAttribute="width" constant="56" id="4XJ-si-ACa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="A7y-gG-nzg" eventType="touchUpInside" id="i9Z-KQ-ZVT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSJ-MU-nDJ" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="5cb-EW-NZI"/>
+                                    <constraint firstAttribute="height" constant="156" id="HQg-II-ysl"/>
+                                </constraints>
+                                <state key="normal" image="NonConsumable"/>
+                                <connections>
+                                    <segue destination="ugP-kE-SqS" kind="showDetail" id="XFw-hR-pH3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMh-dq-mc4" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="5yH-sf-skA"/>
+                                    <constraint firstAttribute="height" constant="156" id="hbw-AP-hS9"/>
+                                </constraints>
+                                <state key="normal" image="Consumable"/>
+                                <connections>
+                                    <segue destination="T4H-yh-XLG" kind="showDetail" id="zjF-L1-fan"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SW-u4-VQX" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="V0N-uM-rll"/>
+                                    <constraint firstAttribute="width" constant="338" id="Yid-L7-ouz"/>
+                                </constraints>
+                                <state key="normal" image="VirtualGood"/>
+                                <connections>
+                                    <segue destination="Gic-tI-YYo" kind="showDetail" id="MI2-Cg-plu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.40224206447601318" blue="0.44020643830299377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h2n-tJ-1Mv" firstAttribute="centerX" secondItem="3f8-5w-WKb" secondAttribute="centerX" id="04K-ee-ngz"/>
+                            <constraint firstItem="h2n-tJ-1Mv" firstAttribute="top" secondItem="Noa-Wq-3nB" secondAttribute="bottom" constant="8" id="4MQ-bA-C6N"/>
+                            <constraint firstItem="7SW-u4-VQX" firstAttribute="centerX" secondItem="3f8-5w-WKb" secondAttribute="centerX" id="9ac-dz-BSq"/>
+                            <constraint firstItem="aSJ-MU-nDJ" firstAttribute="top" secondItem="h2n-tJ-1Mv" secondAttribute="bottom" constant="8" id="HgR-tt-kJ6"/>
+                            <constraint firstItem="cSV-Wa-Ru7" firstAttribute="top" secondItem="Noa-Wq-3nB" secondAttribute="bottom" constant="8" id="d5d-Ee-mY0"/>
+                            <constraint firstItem="aSJ-MU-nDJ" firstAttribute="centerX" secondItem="3f8-5w-WKb" secondAttribute="centerX" id="dOD-wp-raT"/>
+                            <constraint firstItem="XMh-dq-mc4" firstAttribute="centerX" secondItem="3f8-5w-WKb" secondAttribute="centerX" id="eTq-v3-jAp"/>
+                            <constraint firstItem="7SW-u4-VQX" firstAttribute="top" secondItem="XMh-dq-mc4" secondAttribute="bottom" constant="8" id="ikZ-ni-Tyo"/>
+                            <constraint firstItem="cSV-Wa-Ru7" firstAttribute="leading" secondItem="3f8-5w-WKb" secondAttribute="leadingMargin" id="u1s-JN-UeM"/>
+                            <constraint firstItem="XMh-dq-mc4" firstAttribute="top" secondItem="aSJ-MU-nDJ" secondAttribute="bottom" constant="8" id="ylQ-q0-DjU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j6g-kM-hfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="495"/>
+        </scene>
+        <!--Consumables Shop View Controller-->
+        <scene sceneID="LAY-MS-KLI">
+            <objects>
+                <viewController id="T4H-yh-XLG" customClass="ConsumablesShopViewController" customModule="RebeloperStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Psu-Ch-pgD"/>
+                        <viewControllerLayoutGuide type="bottom" id="sEh-qD-JJh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EDX-gu-ew4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Consumable" translatesAutoresizingMaskIntoConstraints="NO" id="cbV-Pl-517">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="I3h-q2-cBK"/>
+                                    <constraint firstAttribute="width" constant="338" id="UCj-H7-4FX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="suP-9B-y1y" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZZ6-IQ-xPq"/>
+                                    <constraint firstAttribute="width" constant="56" id="s3A-sg-xig"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="T4H-yh-XLG" eventType="touchUpInside" id="Tgd-x9-e4h"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bag of Coins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sK5-DW-02K">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="POh-4k-mPQ"/>
+                                    <constraint firstAttribute="width" constant="343" id="z1U-tM-fi4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get your hands on 30 coins that you can spend on gems and in-game items." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BT-U3-8vn">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="37o-sz-mOy"/>
+                                    <constraint firstAttribute="width" constant="343" id="CeP-Zz-ca2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="q3O-71-P0G" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Baj-Gu-jdc"/>
+                                    <constraint firstAttribute="width" constant="343" id="MfD-te-g3k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Buy '30 Coins' Consumable ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseConsumableButtonTapped1:" destination="T4H-yh-XLG" eventType="touchUpInside" id="Yga-Gq-QDe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chest of Coins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiY-FZ-yht">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Ckt-OM-I86"/>
+                                    <constraint firstAttribute="height" constant="21" id="Wr9-Pd-2b7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get your hands on 60 coins that you can spend on gems and in-game items." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ten-6d-euy">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="C91-BK-4WQ"/>
+                                    <constraint firstAttribute="width" constant="343" id="DsG-h8-dG6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JqM-Eq-y72" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="beA-QO-Mle"/>
+                                    <constraint firstAttribute="height" constant="30" id="cTP-zp-0tH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Buy '60 Coins' Consumable ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseConsumableButtonTapped2:" destination="T4H-yh-XLG" eventType="touchUpInside" id="ba0-dM-tja"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coin" translatesAutoresizingMaskIntoConstraints="NO" id="owB-X3-7YI">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rf5-NK-IE7"/>
+                                    <constraint firstAttribute="width" constant="30" id="uVK-Yv-PlI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8J-GL-VtQ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="IwI-2c-LAc"/>
+                                    <constraint firstAttribute="width" constant="241" id="jdh-kY-Fbz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rQ-8m-HBA" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="9Ny-ss-GbH"/>
+                                    <constraint firstAttribute="height" constant="156" id="uTd-YJ-oeX"/>
+                                </constraints>
+                                <state key="normal" image="Gems"/>
+                                <connections>
+                                    <segue destination="HAk-ja-FQp" kind="showDetail" id="avw-Wn-uxY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61365205049514771" green="0.40175321698188782" blue="0.99815934896469116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a8J-GL-VtQ" firstAttribute="top" secondItem="Psu-Ch-pgD" secondAttribute="bottom" constant="13" id="23w-u5-8zk"/>
+                            <constraint firstItem="q3O-71-P0G" firstAttribute="top" secondItem="7BT-U3-8vn" secondAttribute="bottom" constant="8" id="2nW-yM-afX"/>
+                            <constraint firstItem="JqM-Eq-y72" firstAttribute="top" secondItem="Ten-6d-euy" secondAttribute="bottom" constant="8" id="5Xv-oj-C7q"/>
+                            <constraint firstItem="cbV-Pl-517" firstAttribute="centerX" secondItem="EDX-gu-ew4" secondAttribute="centerX" id="81m-nA-ZL3"/>
+                            <constraint firstItem="Ten-6d-euy" firstAttribute="top" secondItem="jiY-FZ-yht" secondAttribute="bottom" constant="8" id="DDF-N8-9nN"/>
+                            <constraint firstItem="sK5-DW-02K" firstAttribute="top" secondItem="cbV-Pl-517" secondAttribute="bottom" constant="8" id="ED2-iP-Zus"/>
+                            <constraint firstItem="owB-X3-7YI" firstAttribute="trailing" secondItem="EDX-gu-ew4" secondAttribute="trailingMargin" id="Frs-z8-R6r"/>
+                            <constraint firstItem="q3O-71-P0G" firstAttribute="centerX" secondItem="EDX-gu-ew4" secondAttribute="centerX" id="Fsg-cF-L8P"/>
+                            <constraint firstItem="Ten-6d-euy" firstAttribute="top" secondItem="jiY-FZ-yht" secondAttribute="bottom" constant="8" id="JSH-vP-uTU"/>
+                            <constraint firstItem="Ten-6d-euy" firstAttribute="centerX" secondItem="EDX-gu-ew4" secondAttribute="centerX" id="K8J-aV-Bn9"/>
+                            <constraint firstItem="jiY-FZ-yht" firstAttribute="top" secondItem="q3O-71-P0G" secondAttribute="bottom" constant="30" id="KGt-fn-b4Q"/>
+                            <constraint firstItem="suP-9B-y1y" firstAttribute="leading" secondItem="EDX-gu-ew4" secondAttribute="leadingMargin" id="QxQ-N4-bY1"/>
+                            <constraint firstItem="JqM-Eq-y72" firstAttribute="top" secondItem="Ten-6d-euy" secondAttribute="bottom" constant="8" id="W1A-MA-bCG"/>
+                            <constraint firstItem="suP-9B-y1y" firstAttribute="top" secondItem="Psu-Ch-pgD" secondAttribute="bottom" constant="8" id="ZO4-ke-3uP"/>
+                            <constraint firstItem="JqM-Eq-y72" firstAttribute="centerX" secondItem="EDX-gu-ew4" secondAttribute="centerX" id="ZPM-a5-5FM"/>
+                            <constraint firstItem="q3O-71-P0G" firstAttribute="top" secondItem="7BT-U3-8vn" secondAttribute="bottom" constant="8" id="ZnS-ga-E9U"/>
+                            <constraint firstItem="jiY-FZ-yht" firstAttribute="centerX" secondItem="EDX-gu-ew4" secondAttribute="centerX" id="aOR-Ib-Y5q"/>
+                            <constraint firstItem="sK5-DW-02K" firstAttribute="centerX" secondItem="EDX-gu-ew4" secondAttribute="centerX" id="cm4-zc-Ifu"/>
+                            <constraint firstItem="owB-X3-7YI" firstAttribute="leading" secondItem="a8J-GL-VtQ" secondAttribute="trailing" constant="8" id="fDX-mx-URf"/>
+                            <constraint firstItem="7BT-U3-8vn" firstAttribute="top" secondItem="sK5-DW-02K" secondAttribute="bottom" constant="8" id="gj2-3F-Slj"/>
+                            <constraint firstItem="7BT-U3-8vn" firstAttribute="top" secondItem="sK5-DW-02K" secondAttribute="bottom" constant="8" id="hhr-pR-ePO"/>
+                            <constraint firstItem="cbV-Pl-517" firstAttribute="top" secondItem="Psu-Ch-pgD" secondAttribute="bottom" constant="8" id="kTI-7s-Pdx"/>
+                            <constraint firstItem="7BT-U3-8vn" firstAttribute="centerX" secondItem="EDX-gu-ew4" secondAttribute="centerX" id="mtd-6Q-D1I"/>
+                            <constraint firstItem="1rQ-8m-HBA" firstAttribute="top" secondItem="JqM-Eq-y72" secondAttribute="bottom" constant="8" id="sdc-61-eGQ"/>
+                            <constraint firstItem="owB-X3-7YI" firstAttribute="top" secondItem="Psu-Ch-pgD" secondAttribute="bottom" constant="8" id="tSf-AL-2J2"/>
+                            <constraint firstItem="1rQ-8m-HBA" firstAttribute="centerX" secondItem="EDX-gu-ew4" secondAttribute="centerX" id="zbS-n9-Oy8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coinsLabel" destination="a8J-GL-VtQ" id="r3F-nU-Uz9"/>
+                        <outlet property="consumable1Description" destination="7BT-U3-8vn" id="btg-wF-ytw"/>
+                        <outlet property="consumable1Title" destination="sK5-DW-02K" id="aYg-pe-SWR"/>
+                        <outlet property="consumable2Description" destination="Ten-6d-euy" id="tIQ-z6-YvN"/>
+                        <outlet property="consumable2Title" destination="jiY-FZ-yht" id="RgW-Ci-1BY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vR-nk-zxA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1184.8" y="495.20239880059972"/>
+        </scene>
+        <!--Gems View Controller-->
+        <scene sceneID="f7q-Is-bpu">
+            <objects>
+                <viewController id="HAk-ja-FQp" customClass="GemsViewController" customModule="RebeloperStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wEN-z3-RQm"/>
+                        <viewControllerLayoutGuide type="bottom" id="D6s-hY-HO1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iwB-xS-CgX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uv2-BF-BP7" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IfY-te-yfN"/>
+                                    <constraint firstAttribute="width" constant="56" id="pyh-tI-2ps"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="HAk-ja-FQp" eventType="touchUpInside" id="fMC-pE-B50"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coin" translatesAutoresizingMaskIntoConstraints="NO" id="ye3-qO-ROi">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="irh-F9-mIh"/>
+                                    <constraint firstAttribute="width" constant="30" id="lJh-Ps-tR7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epv-Os-RD5">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="FoU-lb-NUn"/>
+                                    <constraint firstAttribute="width" constant="241" id="wZP-bs-okp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gems" translatesAutoresizingMaskIntoConstraints="NO" id="PpO-wD-2j3">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="XZ5-uD-BoL"/>
+                                    <constraint firstAttribute="height" constant="156" id="y8h-sP-h0W"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gem" translatesAutoresizingMaskIntoConstraints="NO" id="S1F-uW-cYR">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CH0-xn-0fg"/>
+                                    <constraint firstAttribute="width" constant="30" id="M4p-bK-emy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3W2-Al-17h">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dyc-5j-MwN"/>
+                                    <constraint firstAttribute="width" constant="241" id="oyg-w3-pEd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bag of Gems" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzH-LC-QlK">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="kcT-DC-cBU"/>
+                                    <constraint firstAttribute="height" constant="21" id="x5g-mL-FLN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For 70 Coins get your hands on 50 gems that you can spend on in-game items." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oh2-rR-pdU">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="3bs-SD-hMO"/>
+                                    <constraint firstAttribute="height" constant="63" id="cWh-tQ-O80"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Qb0-jo-Egx" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mhu-GY-lmn"/>
+                                    <constraint firstAttribute="width" constant="343" id="eqH-EZ-dW1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Buy '50 Gems' Consumable ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseVirtualConsumableButtonTapped1:" destination="HAk-ja-FQp" eventType="touchUpInside" id="uiC-n9-AQJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chest of Gems" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38G-4T-nJu">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="79r-nx-c5s"/>
+                                    <constraint firstAttribute="height" constant="21" id="pd0-GJ-o6s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="for 120 Coins get your hands on 100 gems that you can spend on in-game items." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHc-ab-yu3">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="V4q-ED-oSI"/>
+                                    <constraint firstAttribute="height" constant="63" id="xeF-YY-s74"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="A5T-Ai-wtQ" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="4sH-FF-nK8"/>
+                                    <constraint firstAttribute="height" constant="30" id="nNf-1L-lms"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Buy '100 Gems' Consumable ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseVirtualConsumableButtonTapped2:" destination="HAk-ja-FQp" eventType="touchUpInside" id="8rv-3Q-ybq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40188652276992798" green="0.47874504327774048" blue="0.99840694665908813" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="38G-4T-nJu" firstAttribute="centerX" secondItem="iwB-xS-CgX" secondAttribute="centerX" id="0df-ZU-BVT"/>
+                            <constraint firstItem="ye3-qO-ROi" firstAttribute="leading" secondItem="epv-Os-RD5" secondAttribute="trailing" constant="8" id="21S-aa-Uak"/>
+                            <constraint firstItem="S1F-uW-cYR" firstAttribute="top" secondItem="wEN-z3-RQm" secondAttribute="bottom" constant="46" id="4Hy-KK-eUj"/>
+                            <constraint firstItem="A5T-Ai-wtQ" firstAttribute="top" secondItem="XHc-ab-yu3" secondAttribute="bottom" constant="8" id="4KW-cG-WF8"/>
+                            <constraint firstItem="Oh2-rR-pdU" firstAttribute="top" secondItem="JzH-LC-QlK" secondAttribute="bottom" constant="8" id="8C3-Sa-Xz6"/>
+                            <constraint firstItem="Qb0-jo-Egx" firstAttribute="top" secondItem="Oh2-rR-pdU" secondAttribute="bottom" constant="9" id="9aS-Tr-YyZ"/>
+                            <constraint firstItem="Qb0-jo-Egx" firstAttribute="centerX" secondItem="iwB-xS-CgX" secondAttribute="centerX" id="Ajd-Sd-n4T"/>
+                            <constraint firstItem="38G-4T-nJu" firstAttribute="top" secondItem="Qb0-jo-Egx" secondAttribute="bottom" constant="30" id="BYp-7Z-hj2"/>
+                            <constraint firstItem="XHc-ab-yu3" firstAttribute="top" secondItem="38G-4T-nJu" secondAttribute="bottom" constant="8" id="E5a-Hb-kDJ"/>
+                            <constraint firstItem="XHc-ab-yu3" firstAttribute="top" secondItem="38G-4T-nJu" secondAttribute="bottom" constant="8" id="FGa-of-08F"/>
+                            <constraint firstItem="3W2-Al-17h" firstAttribute="top" secondItem="wEN-z3-RQm" secondAttribute="bottom" constant="51" id="Fy4-XI-Keg"/>
+                            <constraint firstItem="epv-Os-RD5" firstAttribute="top" secondItem="wEN-z3-RQm" secondAttribute="bottom" constant="13" id="GmL-tb-wlb"/>
+                            <constraint firstItem="XHc-ab-yu3" firstAttribute="centerX" secondItem="iwB-xS-CgX" secondAttribute="centerX" id="H6R-tm-95m"/>
+                            <constraint firstItem="ye3-qO-ROi" firstAttribute="trailing" secondItem="iwB-xS-CgX" secondAttribute="trailingMargin" id="Hot-bg-Nyf"/>
+                            <constraint firstItem="38G-4T-nJu" firstAttribute="top" secondItem="Qb0-jo-Egx" secondAttribute="bottom" constant="30" id="J1P-Sz-4j7"/>
+                            <constraint firstItem="S1F-uW-cYR" firstAttribute="leading" secondItem="3W2-Al-17h" secondAttribute="trailing" constant="9" id="RVV-zy-4L3"/>
+                            <constraint firstItem="Qb0-jo-Egx" firstAttribute="top" secondItem="Oh2-rR-pdU" secondAttribute="bottom" constant="9" id="Ski-zn-Hx7"/>
+                            <constraint firstItem="S1F-uW-cYR" firstAttribute="trailing" secondItem="iwB-xS-CgX" secondAttribute="trailingMargin" id="THb-fx-Ts6"/>
+                            <constraint firstItem="PpO-wD-2j3" firstAttribute="centerX" secondItem="iwB-xS-CgX" secondAttribute="centerX" id="YqX-2v-RVs"/>
+                            <constraint firstItem="uv2-BF-BP7" firstAttribute="top" secondItem="wEN-z3-RQm" secondAttribute="bottom" constant="8" id="apq-1H-jcD"/>
+                            <constraint firstItem="A5T-Ai-wtQ" firstAttribute="top" secondItem="XHc-ab-yu3" secondAttribute="bottom" constant="8" id="bL4-Wa-Hoe"/>
+                            <constraint firstItem="uv2-BF-BP7" firstAttribute="leading" secondItem="iwB-xS-CgX" secondAttribute="leadingMargin" id="chm-GO-ljG"/>
+                            <constraint firstItem="Oh2-rR-pdU" firstAttribute="centerX" secondItem="iwB-xS-CgX" secondAttribute="centerX" id="cxW-YR-2fc"/>
+                            <constraint firstItem="Oh2-rR-pdU" firstAttribute="top" secondItem="JzH-LC-QlK" secondAttribute="bottom" constant="8" id="gnK-Gh-gRJ"/>
+                            <constraint firstItem="PpO-wD-2j3" firstAttribute="top" secondItem="wEN-z3-RQm" secondAttribute="bottom" constant="46" id="jjb-BI-Ze1"/>
+                            <constraint firstItem="Qb0-jo-Egx" firstAttribute="top" secondItem="Oh2-rR-pdU" secondAttribute="bottom" constant="9" id="pNl-Lp-wE2"/>
+                            <constraint firstItem="JzH-LC-QlK" firstAttribute="top" secondItem="PpO-wD-2j3" secondAttribute="bottom" constant="8" id="s8D-NR-d3W"/>
+                            <constraint firstItem="ye3-qO-ROi" firstAttribute="top" secondItem="wEN-z3-RQm" secondAttribute="bottom" constant="8" id="sGd-Dh-lc8"/>
+                            <constraint firstItem="Oh2-rR-pdU" firstAttribute="top" secondItem="JzH-LC-QlK" secondAttribute="bottom" constant="8" id="sPs-rQ-4S3"/>
+                            <constraint firstItem="A5T-Ai-wtQ" firstAttribute="centerX" secondItem="iwB-xS-CgX" secondAttribute="centerX" id="t18-oP-kqT"/>
+                            <constraint firstItem="A5T-Ai-wtQ" firstAttribute="top" secondItem="XHc-ab-yu3" secondAttribute="bottom" constant="8" id="uaA-NP-NcZ"/>
+                            <constraint firstItem="ye3-qO-ROi" firstAttribute="leading" secondItem="epv-Os-RD5" secondAttribute="trailing" constant="8" id="v8u-Yf-jgi"/>
+                            <constraint firstItem="JzH-LC-QlK" firstAttribute="centerX" secondItem="iwB-xS-CgX" secondAttribute="centerX" id="wY8-UB-yJ8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coinsLabel" destination="epv-Os-RD5" id="V0O-4c-fsQ"/>
+                        <outlet property="gemsLabel" destination="3W2-Al-17h" id="zoq-1R-6xN"/>
+                        <outlet property="virtualConsumable1Description" destination="Oh2-rR-pdU" id="qcE-X9-J0n"/>
+                        <outlet property="virtualConsumable1Title" destination="JzH-LC-QlK" id="92w-xd-8cf"/>
+                        <outlet property="virtualConsumable2Description" destination="XHc-ab-yu3" id="cyi-vA-oXn"/>
+                        <outlet property="virtualConsumable2Title" destination="38G-4T-nJu" id="gmk-rJ-q3w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="txQ-Qd-TaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1924" y="496"/>
+        </scene>
+        <!--Virtual Goods Shop View Controller-->
+        <scene sceneID="f6f-Wd-6E2">
+            <objects>
+                <viewController id="Gic-tI-YYo" customClass="VirtualGoodsShopViewController" customModule="RebeloperStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ReL-5T-Ndp"/>
+                        <viewControllerLayoutGuide type="bottom" id="URO-Xe-xpf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2xg-sA-Itv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="J6a-tC-cGZ" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1zE-nB-C6B"/>
+                                    <constraint firstAttribute="width" constant="56" id="wCH-Iq-HiM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="Gic-tI-YYo" eventType="touchUpInside" id="FFj-cA-cHD"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sword" translatesAutoresizingMaskIntoConstraints="NO" id="sIS-d2-72O">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="u0x-RD-vBD"/>
+                                    <constraint firstAttribute="height" constant="50" id="xHg-vD-yVw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sword" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87y-Te-KNd">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="OZ7-5s-E26"/>
+                                    <constraint firstAttribute="height" constant="21" id="TJ2-GE-Ipd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give yourself a better chance in fight." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3se-Ub-C1W">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NgQ-m5-T9j"/>
+                                    <constraint firstAttribute="width" constant="343" id="PjZ-FP-vKl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="S6N-4p-TNT" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6J3-S2-wbb"/>
+                                    <constraint firstAttribute="width" constant="343" id="R1X-J5-zlC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Buy Virtual Non-Consumable for 50 Coins">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseVirtualNonConsumableButtonTapped1:" destination="Gic-tI-YYo" eventType="touchUpInside" id="5Oa-6v-4js"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bomb" translatesAutoresizingMaskIntoConstraints="NO" id="mve-tr-tal">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="RQd-Tb-jdf"/>
+                                    <constraint firstAttribute="height" constant="50" id="bz5-lA-PhU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bomb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ei-ca-jkh">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7id-kA-lO0"/>
+                                    <constraint firstAttribute="width" constant="343" id="oBP-Dh-FBS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use bombs to clear the way." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igo-eb-qOw">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Jwg-oe-gXe"/>
+                                    <constraint firstAttribute="height" constant="21" id="V0K-wK-HN8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="u6v-wH-qHc" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Ubw-CC-LAB"/>
+                                    <constraint firstAttribute="height" constant="30" id="ihd-eC-9WL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Buy 5 Virtual Consumables for 150 Coins">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseVirtualConsumableButtonTapped:" destination="Gic-tI-YYo" eventType="touchUpInside" id="NYF-wU-pS7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="IXr-q5-Sd5" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YDF-Yr-xr2"/>
+                                    <constraint firstAttribute="width" constant="343" id="mZo-x5-XJ0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Consume Virtual Consumable">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="consumeVirtualConsumable:" destination="Gic-tI-YYo" eventType="touchUpInside" id="IJi-Kb-f0L"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coin" translatesAutoresizingMaskIntoConstraints="NO" id="JyX-bQ-SSf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fbu-gq-pzo"/>
+                                    <constraint firstAttribute="width" constant="30" id="pdx-xe-98l"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0N-CL-0Ob">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Idl-su-MHf"/>
+                                    <constraint firstAttribute="width" constant="241" id="xwo-Kg-UP1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gem" translatesAutoresizingMaskIntoConstraints="NO" id="pdx-AH-eWd">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="50h-FS-KxV"/>
+                                    <constraint firstAttribute="height" constant="30" id="esW-la-Sgp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hci-ei-Ljh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="2D8-eg-pyJ"/>
+                                    <constraint firstAttribute="height" constant="21" id="Zzf-FK-CD3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bomb" translatesAutoresizingMaskIntoConstraints="NO" id="2WO-mb-KwH">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="A35-kn-S0p"/>
+                                    <constraint firstAttribute="height" constant="30" id="YBi-lm-FXQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrS-5S-IaV">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="78t-9P-UuZ"/>
+                                    <constraint firstAttribute="height" constant="21" id="t43-Mp-NOF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Helmet" translatesAutoresizingMaskIntoConstraints="NO" id="DCg-Xk-ve1">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="L4b-og-ydl"/>
+                                    <constraint firstAttribute="height" constant="50" id="qgk-TJ-Tzv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helmet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2x-dF-6lZ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="A9h-B5-cph"/>
+                                    <constraint firstAttribute="height" constant="21" id="ABC-pv-gob"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protects against rain." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6k-Wg-56O">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="bef-pI-JSn"/>
+                                    <constraint firstAttribute="width" constant="343" id="clv-db-oZQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Pkx-dg-CLV" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JkZ-f8-Z2s"/>
+                                    <constraint firstAttribute="width" constant="343" id="iCN-pg-ezi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Buy Virtual Good for 80 Gems">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseVirtualNonConsumableButtonTapped2:" destination="Gic-tI-YYo" eventType="touchUpInside" id="lRZ-I0-Wqp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40506881475448608" green="0.98241657018661499" blue="0.66914629936218262" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="87y-Te-KNd" firstAttribute="centerX" secondItem="2xg-sA-Itv" secondAttribute="centerX" id="1UY-Jl-cur"/>
+                            <constraint firstItem="WrS-5S-IaV" firstAttribute="top" secondItem="hci-ei-Ljh" secondAttribute="bottom" constant="17" id="4Dt-hA-PQ1"/>
+                            <constraint firstItem="J6a-tC-cGZ" firstAttribute="top" secondItem="ReL-5T-Ndp" secondAttribute="bottom" constant="8" id="4aM-ek-vPu"/>
+                            <constraint firstItem="hci-ei-Ljh" firstAttribute="top" secondItem="u0N-CL-0Ob" secondAttribute="bottom" constant="17" id="7Cu-B8-H7f"/>
+                            <constraint firstItem="JyX-bQ-SSf" firstAttribute="top" secondItem="ReL-5T-Ndp" secondAttribute="bottom" constant="8" id="8p3-mv-mMk"/>
+                            <constraint firstItem="2WO-mb-KwH" firstAttribute="trailing" secondItem="2xg-sA-Itv" secondAttribute="trailingMargin" id="A9a-ri-kHM"/>
+                            <constraint firstItem="2WO-mb-KwH" firstAttribute="leading" secondItem="WrS-5S-IaV" secondAttribute="trailing" constant="8" id="BDj-RM-xgv"/>
+                            <constraint firstItem="Igo-eb-qOw" firstAttribute="centerX" secondItem="2xg-sA-Itv" secondAttribute="centerX" id="BL7-k3-L2i"/>
+                            <constraint firstItem="pdx-AH-eWd" firstAttribute="trailing" secondItem="2xg-sA-Itv" secondAttribute="trailingMargin" id="C8X-ez-Ssz"/>
+                            <constraint firstItem="c6k-Wg-56O" firstAttribute="top" secondItem="f2x-dF-6lZ" secondAttribute="bottom" constant="8" id="Cdc-w4-VUv"/>
+                            <constraint firstItem="IXr-q5-Sd5" firstAttribute="top" secondItem="u6v-wH-qHc" secondAttribute="bottom" constant="8" id="CxT-6x-EjB"/>
+                            <constraint firstItem="u0N-CL-0Ob" firstAttribute="top" secondItem="ReL-5T-Ndp" secondAttribute="bottom" constant="13" id="Dzd-ci-VMr"/>
+                            <constraint firstItem="sIS-d2-72O" firstAttribute="top" secondItem="hci-ei-Ljh" secondAttribute="bottom" constant="46" id="EQk-ii-W4v"/>
+                            <constraint firstItem="f2x-dF-6lZ" firstAttribute="top" secondItem="DCg-Xk-ve1" secondAttribute="bottom" constant="8" id="Fbz-Y2-iPM"/>
+                            <constraint firstItem="2WO-mb-KwH" firstAttribute="top" secondItem="pdx-AH-eWd" secondAttribute="bottom" constant="8" id="FmS-XZ-dxe"/>
+                            <constraint firstItem="sIS-d2-72O" firstAttribute="centerX" secondItem="2xg-sA-Itv" secondAttribute="centerX" id="Gtw-gG-jvq"/>
+                            <constraint firstItem="DCg-Xk-ve1" firstAttribute="centerX" secondItem="2xg-sA-Itv" secondAttribute="centerX" id="HWd-KI-db8"/>
+                            <constraint firstItem="IXr-q5-Sd5" firstAttribute="centerX" secondItem="2xg-sA-Itv" secondAttribute="centerX" id="JA0-zc-Nz0"/>
+                            <constraint firstItem="J6a-tC-cGZ" firstAttribute="leading" secondItem="2xg-sA-Itv" secondAttribute="leadingMargin" id="JOT-Tw-3cV"/>
+                            <constraint firstItem="u6v-wH-qHc" firstAttribute="centerX" secondItem="2xg-sA-Itv" secondAttribute="centerX" id="JQv-dy-Jyh"/>
+                            <constraint firstItem="pdx-AH-eWd" firstAttribute="leading" secondItem="hci-ei-Ljh" secondAttribute="trailing" constant="8" id="Ner-E8-G2B"/>
+                            <constraint firstItem="Pkx-dg-CLV" firstAttribute="centerX" secondItem="2xg-sA-Itv" secondAttribute="centerX" id="Svo-zK-Akl"/>
+                            <constraint firstItem="mve-tr-tal" firstAttribute="top" secondItem="S6N-4p-TNT" secondAttribute="bottom" constant="8" id="TJw-zL-OBy"/>
+                            <constraint firstItem="f2x-dF-6lZ" firstAttribute="centerX" secondItem="2xg-sA-Itv" secondAttribute="centerX" id="V4R-g2-30c"/>
+                            <constraint firstItem="Igo-eb-qOw" firstAttribute="top" secondItem="6ei-ca-jkh" secondAttribute="bottom" constant="8" id="Wt6-0c-BkH"/>
+                            <constraint firstItem="JyX-bQ-SSf" firstAttribute="trailing" secondItem="2xg-sA-Itv" secondAttribute="trailingMargin" id="aTT-2S-hHi"/>
+                            <constraint firstItem="3se-Ub-C1W" firstAttribute="centerX" secondItem="2xg-sA-Itv" secondAttribute="centerX" id="cGM-Vk-Tob"/>
+                            <constraint firstItem="S6N-4p-TNT" firstAttribute="top" secondItem="3se-Ub-C1W" secondAttribute="bottom" constant="8" id="dEm-Ar-OF4"/>
+                            <constraint firstItem="c6k-Wg-56O" firstAttribute="centerX" secondItem="2xg-sA-Itv" secondAttribute="centerX" id="fVW-0o-J4S"/>
+                            <constraint firstItem="mve-tr-tal" firstAttribute="centerX" secondItem="2xg-sA-Itv" secondAttribute="centerX" id="fat-7J-7D6"/>
+                            <constraint firstItem="2WO-mb-KwH" firstAttribute="leading" secondItem="WrS-5S-IaV" secondAttribute="trailing" constant="8" id="hXw-sC-JI5"/>
+                            <constraint firstItem="87y-Te-KNd" firstAttribute="top" secondItem="sIS-d2-72O" secondAttribute="bottom" constant="8" id="kul-jA-kZ4"/>
+                            <constraint firstItem="6ei-ca-jkh" firstAttribute="centerX" secondItem="2xg-sA-Itv" secondAttribute="centerX" id="lGv-Ai-hEp"/>
+                            <constraint firstItem="6ei-ca-jkh" firstAttribute="top" secondItem="mve-tr-tal" secondAttribute="bottom" constant="8" id="npL-XL-BBL"/>
+                            <constraint firstItem="S6N-4p-TNT" firstAttribute="centerX" secondItem="2xg-sA-Itv" secondAttribute="centerX" id="o4H-vd-vxy"/>
+                            <constraint firstItem="DCg-Xk-ve1" firstAttribute="top" secondItem="u6v-wH-qHc" secondAttribute="bottom" constant="46" id="q2j-jq-XAj"/>
+                            <constraint firstItem="Pkx-dg-CLV" firstAttribute="top" secondItem="c6k-Wg-56O" secondAttribute="bottom" constant="8" id="rhg-El-oiD"/>
+                            <constraint firstItem="JyX-bQ-SSf" firstAttribute="leading" secondItem="u0N-CL-0Ob" secondAttribute="trailing" constant="8" id="xAt-1e-WXz"/>
+                            <constraint firstItem="3se-Ub-C1W" firstAttribute="top" secondItem="87y-Te-KNd" secondAttribute="bottom" constant="8" id="xBb-nK-1p3"/>
+                            <constraint firstItem="u6v-wH-qHc" firstAttribute="top" secondItem="Igo-eb-qOw" secondAttribute="bottom" constant="8" id="xNI-DU-tqj"/>
+                            <constraint firstItem="pdx-AH-eWd" firstAttribute="top" secondItem="JyX-bQ-SSf" secondAttribute="bottom" constant="8" id="zvN-gA-bY5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coinsLabel" destination="u0N-CL-0Ob" id="9GE-zi-E8Z"/>
+                        <outlet property="gemsLabel" destination="hci-ei-Ljh" id="jk7-Q3-DKE"/>
+                        <outlet property="virtualConsumableDescription" destination="Igo-eb-qOw" id="GE5-YA-8oX"/>
+                        <outlet property="virtualConsumableTitle" destination="6ei-ca-jkh" id="d4l-7g-1o3"/>
+                        <outlet property="virtualConsumablesLabel" destination="WrS-5S-IaV" id="ade-c7-MyJ"/>
+                        <outlet property="virtualNonConsumable1Button" destination="S6N-4p-TNT" id="Au7-9d-IAv"/>
+                        <outlet property="virtualNonConsumable1Description" destination="3se-Ub-C1W" id="zRb-vo-gm8"/>
+                        <outlet property="virtualNonConsumable1Title" destination="87y-Te-KNd" id="ats-Nj-js0"/>
+                        <outlet property="virtualNonConsumable2Button" destination="Pkx-dg-CLV" id="Yv3-R3-bF4"/>
+                        <outlet property="virtualNonConsumable2Description" destination="c6k-Wg-56O" id="nhz-Q4-mhc"/>
+                        <outlet property="virtualNonConsumable2Title" destination="f2x-dF-6lZ" id="5gq-nD-tHF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h5P-Co-9dS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1184.8" y="1209.4452773613195"/>
+        </scene>
+        <!--Non Consumables Shop View Controller-->
+        <scene sceneID="dIj-ID-ATF">
+            <objects>
+                <viewController id="ugP-kE-SqS" customClass="NonConsumablesShopViewController" customModule="RebeloperStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GkT-yb-4KH"/>
+                        <viewControllerLayoutGuide type="bottom" id="i9y-Vr-dh9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aBk-An-Ftv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NonConsumable" translatesAutoresizingMaskIntoConstraints="NO" id="0ol-sv-d33">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="OgX-pb-LUI"/>
+                                    <constraint firstAttribute="height" constant="156" id="bvR-2V-obF"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JI0-hO-5Ew" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="UZZ-od-fQ4"/>
+                                    <constraint firstAttribute="height" constant="30" id="plv-0c-WfY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="ugP-kE-SqS" eventType="touchUpInside" id="nhR-wJ-Btf"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T05-fF-fM2">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TestBanner" translatesAutoresizingMaskIntoConstraints="NO" id="VYc-8l-zu8">
+                                        <frame key="frameInset" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Az9-QU-TjU"/>
+                                    <constraint firstAttribute="height" constant="50" id="pRH-Vp-Lfd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlock Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OT0-5P-sEc">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4ad-KL-NVd"/>
+                                    <constraint firstAttribute="width" constant="343" id="c3V-wd-m7K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for playing our game so far. Consider buying the next level." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCk-sn-MPx">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="F1I-JV-ZJZ"/>
+                                    <constraint firstAttribute="width" constant="343" id="M9L-z7-0nb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="u5I-f8-hA4" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MoC-FN-zLA"/>
+                                    <constraint firstAttribute="width" constant="343" id="Z6w-mU-uVg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Buy 'Unlock Level' Non-consumable ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseNonConsumableButtonTapped1:" destination="ugP-kE-SqS" eventType="touchUpInside" id="k5l-jE-rAa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="NtZ-Ss-nRX" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="00D-Oq-XHu"/>
+                                    <constraint firstAttribute="width" constant="343" id="Dbj-YR-s4R"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="amb-yj-O68"/>
+                                    <constraint firstAttribute="height" constant="30" id="xgl-Qm-ESQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Go to Next Level">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="R1m-2v-hUe" kind="showDetail" id="FnU-gi-O3h"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Ads" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHC-OX-8HF">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="DuD-As-gaB"/>
+                                    <constraint firstAttribute="height" constant="21" id="wev-um-zIP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove all the ads from the app." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqm-oI-iYu">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="5Hs-Vo-EtV"/>
+                                    <constraint firstAttribute="width" constant="343" id="9Mg-PM-Qja"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zfe-ng-deK" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3vK-cB-gP9"/>
+                                    <constraint firstAttribute="width" constant="343" id="4mb-mh-R2q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Buy 'No Ads' Non-consumable ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseNonConsumableButtonTapped2:" destination="ugP-kE-SqS" eventType="touchUpInside" id="Rok-aN-35n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45266717672348022" green="0.3983796238899231" blue="0.99901634454727173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0ol-sv-d33" firstAttribute="centerX" secondItem="aBk-An-Ftv" secondAttribute="centerX" id="1pz-sQ-mCM"/>
+                            <constraint firstItem="OT0-5P-sEc" firstAttribute="centerX" secondItem="aBk-An-Ftv" secondAttribute="centerX" id="2Hp-6F-81N"/>
+                            <constraint firstItem="zfe-ng-deK" firstAttribute="top" secondItem="uqm-oI-iYu" secondAttribute="bottom" constant="8" id="5I5-aw-KXF"/>
+                            <constraint firstItem="zfe-ng-deK" firstAttribute="centerX" secondItem="aBk-An-Ftv" secondAttribute="centerX" id="Dcs-1K-HAt"/>
+                            <constraint firstItem="uqm-oI-iYu" firstAttribute="top" secondItem="mHC-OX-8HF" secondAttribute="bottom" constant="8" id="Gix-v5-dit"/>
+                            <constraint firstItem="uqm-oI-iYu" firstAttribute="centerX" secondItem="aBk-An-Ftv" secondAttribute="centerX" id="LXC-dl-yaT"/>
+                            <constraint firstItem="mHC-OX-8HF" firstAttribute="top" secondItem="NtZ-Ss-nRX" secondAttribute="bottom" constant="30" id="ORe-kc-pXj"/>
+                            <constraint firstItem="i9y-Vr-dh9" firstAttribute="top" secondItem="T05-fF-fM2" secondAttribute="bottom" id="SNO-HX-PWP"/>
+                            <constraint firstItem="T05-fF-fM2" firstAttribute="centerX" secondItem="aBk-An-Ftv" secondAttribute="centerX" id="WKv-yy-1Zj"/>
+                            <constraint firstItem="JI0-hO-5Ew" firstAttribute="top" secondItem="GkT-yb-4KH" secondAttribute="bottom" constant="8" id="ZMb-zP-Ibw"/>
+                            <constraint firstItem="u5I-f8-hA4" firstAttribute="top" secondItem="kCk-sn-MPx" secondAttribute="bottom" constant="8" id="ZNe-GR-Oz1"/>
+                            <constraint firstItem="0ol-sv-d33" firstAttribute="top" secondItem="GkT-yb-4KH" secondAttribute="bottom" constant="8" id="b8v-0Y-EHJ"/>
+                            <constraint firstItem="kCk-sn-MPx" firstAttribute="top" secondItem="OT0-5P-sEc" secondAttribute="bottom" constant="8" id="cYr-qC-HHr"/>
+                            <constraint firstItem="JI0-hO-5Ew" firstAttribute="leading" secondItem="aBk-An-Ftv" secondAttribute="leadingMargin" id="gYx-mQ-yi6"/>
+                            <constraint firstItem="u5I-f8-hA4" firstAttribute="centerX" secondItem="aBk-An-Ftv" secondAttribute="centerX" id="hkM-FD-hci"/>
+                            <constraint firstItem="NtZ-Ss-nRX" firstAttribute="top" secondItem="u5I-f8-hA4" secondAttribute="bottom" constant="8" id="pT2-Dg-kOf"/>
+                            <constraint firstItem="OT0-5P-sEc" firstAttribute="top" secondItem="0ol-sv-d33" secondAttribute="bottom" constant="8" id="tDJ-Ss-3nM"/>
+                            <constraint firstItem="kCk-sn-MPx" firstAttribute="centerX" secondItem="aBk-An-Ftv" secondAttribute="centerX" id="vQL-J4-HtB"/>
+                            <constraint firstItem="mHC-OX-8HF" firstAttribute="centerX" secondItem="aBk-An-Ftv" secondAttribute="centerX" id="ve9-x1-Xaw"/>
+                            <constraint firstItem="NtZ-Ss-nRX" firstAttribute="centerX" secondItem="aBk-An-Ftv" secondAttribute="centerX" id="zTR-Th-YlW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView" destination="T05-fF-fM2" id="6Jb-bs-RtA"/>
+                        <outlet property="nonConsumable1Description" destination="kCk-sn-MPx" id="asx-Ut-pTD"/>
+                        <outlet property="nonConsumable1Title" destination="OT0-5P-sEc" id="SZg-9u-wd8"/>
+                        <outlet property="nonConsumable2Description" destination="uqm-oI-iYu" id="ipW-9k-2op"/>
+                        <outlet property="nonConsumable2Title" destination="mHC-OX-8HF" id="zmg-hI-QxI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8A-2g-gAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="-239"/>
+        </scene>
+        <!--Next Level View Controller-->
+        <scene sceneID="qso-ZY-8Rt">
+            <objects>
+                <viewController id="R1m-2v-hUe" customClass="NextLevelViewController" customModule="RebeloperStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="plB-lq-j3c"/>
+                        <viewControllerLayoutGuide type="bottom" id="hYb-Kb-GTz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="93Q-gS-C9S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GOo-GO-qSF" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Oe8-xq-Aau"/>
+                                    <constraint firstAttribute="width" constant="56" id="ai3-xa-5e3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="R1m-2v-hUe" eventType="touchUpInside" id="FCq-x5-kwP"/>
+                                    <action selector="backButtonTapped:" destination="ugP-kE-SqS" eventType="touchUpInside" id="HIr-77-zjd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔒 Level Locked" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXP-Su-yvn">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Bbs-dH-TnI"/>
+                                    <constraint firstAttribute="width" constant="343" id="jVA-Aq-fbT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.56247323751449585" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GOo-GO-qSF" firstAttribute="top" secondItem="plB-lq-j3c" secondAttribute="bottom" constant="8" id="1Jv-oY-jR2"/>
+                            <constraint firstItem="WXP-Su-yvn" firstAttribute="centerY" secondItem="93Q-gS-C9S" secondAttribute="centerY" id="BK6-3D-u5k"/>
+                            <constraint firstItem="GOo-GO-qSF" firstAttribute="leading" secondItem="93Q-gS-C9S" secondAttribute="leadingMargin" id="UoQ-49-aeX"/>
+                            <constraint firstItem="WXP-Su-yvn" firstAttribute="centerX" secondItem="93Q-gS-C9S" secondAttribute="centerX" id="w02-BF-KDn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="levelStatusLabel" destination="WXP-Su-yvn" id="u5W-rn-iPa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gd-Yr-eww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1924" y="-240"/>
+        </scene>
+        <!--Renewable Subscriptions Shop1 View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RenewableSubscriptionsShop1ViewController" customModule="RebeloperStore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +1192,211 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔒 Content Locked" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFS-do-63K">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PGc-O0-kek"/>
+                                    <constraint firstAttribute="width" constant="343" id="nNb-nx-kdj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ContentLocked" translatesAutoresizingMaskIntoConstraints="NO" id="qTS-uX-Qf1">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="3TE-Lf-Tuj"/>
+                                    <constraint firstAttribute="width" constant="338" id="Qgd-AC-tqZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drink Coffee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mF-z2-Vws">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8Vn-xK-d2e"/>
+                                    <constraint firstAttribute="width" constant="343" id="spK-CX-rum"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All you can drink! A dream come true for coffee lovers. Drink coffee each day, every day." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F75-aP-vQt">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="6ZX-So-y73"/>
+                                    <constraint firstAttribute="width" constant="343" id="Q1A-yB-1xH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="iBR-8H-U28" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="CcC-Ft-oay"/>
+                                    <constraint firstAttribute="height" constant="30" id="XV1-yH-IOg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Buy Weekly Subscription">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseAutoRenewableSubscriptionButtonTapped1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QKf-vc-Ndb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JUG-9J-Hda" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="UQm-ra-C05"/>
+                                    <constraint firstAttribute="height" constant="30" id="yA6-KL-dzb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Buy Monthly Subscription">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseAutoRenewableSubscriptionButtonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQa-tW-Kpd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="gK9-Jh-tB5" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="b0D-G7-SVz"/>
+                                    <constraint firstAttribute="height" constant="30" id="dbj-wq-PG9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Buy 90 Days Subscription">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseAutoRenewableSubscriptionButtonTapped3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qL5-oa-NMk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="IUQ-oC-Ydg" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0Td-iX-eLn"/>
+                                    <constraint firstAttribute="width" constant="343" id="Hbz-Tr-HyC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Buy Non-renewable Subscription">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseNonRenewableSubscriptionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y5j-cJ-9hr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription availability date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJL-58-nul">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Sh9-jX-syz"/>
+                                    <constraint firstAttribute="height" constant="21" id="pR2-Bi-Vv2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription availability date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNq-ac-LkD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6Au-AI-PTd"/>
+                                    <constraint firstAttribute="width" constant="343" id="GlW-cp-yHR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription availability date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaK-1W-z98">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="c6i-gF-JcZ"/>
+                                    <constraint firstAttribute="height" constant="21" id="e4R-NZ-mrF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9bF-nc-sto" customClass="CustomButton" customModule="RebeloperStore" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Bi6-3P-UnR"/>
+                                    <constraint firstAttribute="width" constant="56" id="PG5-3e-Y6g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ylo-KB-X6P"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription availability date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYI-Aa-IjD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QcQ-LJ-wgn"/>
+                                    <constraint firstAttribute="width" constant="343" id="l4q-Et-PnA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42008143663406372" green="0.85073131322860718" blue="0.93131393194198608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mYI-Aa-IjD" firstAttribute="top" secondItem="IUQ-oC-Ydg" secondAttribute="bottom" constant="8" id="0as-Lo-uNo"/>
+                            <constraint firstItem="iFS-do-63K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="2tZ-S7-E6P"/>
+                            <constraint firstItem="JUG-9J-Hda" firstAttribute="top" secondItem="iBR-8H-U28" secondAttribute="bottom" constant="37" id="3Dv-1H-4dI"/>
+                            <constraint firstItem="F75-aP-vQt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3vV-AW-POI"/>
+                            <constraint firstItem="9bF-nc-sto" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6xG-HX-WMW"/>
+                            <constraint firstItem="oJL-58-nul" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Pw-kI-6bL"/>
+                            <constraint firstItem="oJL-58-nul" firstAttribute="top" secondItem="iBR-8H-U28" secondAttribute="bottom" constant="8" id="A1X-zx-pCV"/>
+                            <constraint firstItem="xaK-1W-z98" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Au9-iN-vHZ"/>
+                            <constraint firstItem="IUQ-oC-Ydg" firstAttribute="top" secondItem="xaK-1W-z98" secondAttribute="bottom" constant="8" id="Btc-xC-hqi"/>
+                            <constraint firstItem="0mF-z2-Vws" firstAttribute="top" secondItem="qTS-uX-Qf1" secondAttribute="bottom" constant="8" id="EHH-qn-CZI"/>
+                            <constraint firstItem="iBR-8H-U28" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JIW-Oh-31o"/>
+                            <constraint firstItem="IUQ-oC-Ydg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PIW-Vq-XFc"/>
+                            <constraint firstItem="qTS-uX-Qf1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T07-bu-65I"/>
+                            <constraint firstItem="F75-aP-vQt" firstAttribute="top" secondItem="0mF-z2-Vws" secondAttribute="bottom" constant="8" id="Ta7-Vg-6Je"/>
+                            <constraint firstItem="gK9-Jh-tB5" firstAttribute="top" secondItem="JUG-9J-Hda" secondAttribute="bottom" constant="37" id="VTp-Jt-1Z7"/>
+                            <constraint firstItem="gK9-Jh-tB5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dAe-JV-eea"/>
+                            <constraint firstItem="mYI-Aa-IjD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h2W-OX-FTe"/>
+                            <constraint firstItem="JUG-9J-Hda" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jU3-pB-Pty"/>
+                            <constraint firstItem="xaK-1W-z98" firstAttribute="top" secondItem="gK9-Jh-tB5" secondAttribute="bottom" constant="8" id="llh-OS-qk3"/>
+                            <constraint firstItem="iFS-do-63K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="me3-hL-esh"/>
+                            <constraint firstItem="F75-aP-vQt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mhI-8Q-Jnu"/>
+                            <constraint firstItem="9bF-nc-sto" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="pLp-Ne-HAf"/>
+                            <constraint firstItem="XNq-ac-LkD" firstAttribute="top" secondItem="JUG-9J-Hda" secondAttribute="bottom" constant="8" id="qHp-zg-jaP"/>
+                            <constraint firstItem="0mF-z2-Vws" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rgB-ak-rd6"/>
+                            <constraint firstItem="iBR-8H-U28" firstAttribute="top" secondItem="F75-aP-vQt" secondAttribute="bottom" constant="8" id="v3Q-6q-haC"/>
+                            <constraint firstItem="XNq-ac-LkD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yJ0-xh-vbd"/>
+                            <constraint firstItem="qTS-uX-Qf1" firstAttribute="top" secondItem="iFS-do-63K" secondAttribute="bottom" constant="8" id="yZ4-TE-oFQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="autoRenewableSubscriptionDescription" destination="F75-aP-vQt" id="5nq-Hl-dnb"/>
+                        <outlet property="autoRenewableSubscriptionTitle" destination="0mF-z2-Vws" id="wCk-Ba-qQ3"/>
+                        <outlet property="contentImageView" destination="qTS-uX-Qf1" id="ZC6-Kn-QvA"/>
+                        <outlet property="contentStatusLabel" destination="iFS-do-63K" id="Rgs-RA-hGH"/>
+                        <outlet property="subscriptionAvailabilityDateLabel1" destination="oJL-58-nul" id="dC0-nM-ChC"/>
+                        <outlet property="subscriptionAvailabilityDateLabel2" destination="XNq-ac-LkD" id="nk1-3t-CBT"/>
+                        <outlet property="subscriptionAvailabilityDateLabel3" destination="xaK-1W-z98" id="9MC-rV-CcB"/>
+                        <outlet property="subscriptionAvailabilityDateLabel4" destination="mYI-Aa-IjD" id="ZgA-b0-hCp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1185" y="-1671"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bomb" width="30" height="30"/>
+        <image name="Coin" width="30" height="30"/>
+        <image name="Consumable" width="338" height="156"/>
+        <image name="Content" width="338" height="156"/>
+        <image name="Content2" width="338" height="156"/>
+        <image name="ContentLocked" width="338" height="156"/>
+        <image name="ContentLocked2" width="338" height="156"/>
+        <image name="Gem" width="30" height="30"/>
+        <image name="Gems" width="338" height="156"/>
+        <image name="Helmet" width="30" height="30"/>
+        <image name="NonConsumable" width="338" height="156"/>
+        <image name="Regular" width="338" height="156"/>
+        <image name="Renewable" width="338" height="156"/>
+        <image name="Sword" width="30" height="30"/>
+        <image name="TestBanner" width="320" height="50"/>
+        <image name="Title" width="338" height="156"/>
+        <image name="VirtualGood" width="338" height="156"/>
+    </resources>
 </document>

@@ -8,20 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		C91B73521D9872DC00CCFC05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B73511D9872DC00CCFC05 /* AppDelegate.swift */; };
-		C91B73541D9872DC00CCFC05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B73531D9872DC00CCFC05 /* ViewController.swift */; };
 		C91B73571D9872DC00CCFC05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91B73551D9872DC00CCFC05 /* Main.storyboard */; };
 		C91B73591D9872DC00CCFC05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91B73581D9872DC00CCFC05 /* Assets.xcassets */; };
 		C91B735C1D9872DC00CCFC05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91B735A1D9872DC00CCFC05 /* LaunchScreen.storyboard */; };
+		C91B736E1D98741F00CCFC05 /* ConsumablesShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B73631D98741F00CCFC05 /* ConsumablesShopViewController.swift */; };
+		C91B736F1D98741F00CCFC05 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B73641D98741F00CCFC05 /* CustomButton.swift */; };
+		C91B73701D98741F00CCFC05 /* GemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B73651D98741F00CCFC05 /* GemsViewController.swift */; };
+		C91B73711D98741F00CCFC05 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B73661D98741F00CCFC05 /* MainViewController.swift */; };
+		C91B73721D98741F00CCFC05 /* NextLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B73671D98741F00CCFC05 /* NextLevelViewController.swift */; };
+		C91B73731D98741F00CCFC05 /* NonConsumablesShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B73681D98741F00CCFC05 /* NonConsumablesShopViewController.swift */; };
+		C91B73741D98741F00CCFC05 /* RegularShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B73691D98741F00CCFC05 /* RegularShopViewController.swift */; };
+		C91B73751D98741F00CCFC05 /* RenewablesShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B736A1D98741F00CCFC05 /* RenewablesShopViewController.swift */; };
+		C91B73761D98741F00CCFC05 /* RenewableSubscriptionsShop1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B736B1D98741F00CCFC05 /* RenewableSubscriptionsShop1ViewController.swift */; };
+		C91B73771D98741F00CCFC05 /* RenewableSubscriptionsShop2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B736C1D98741F00CCFC05 /* RenewableSubscriptionsShop2ViewController.swift */; };
+		C91B73781D98741F00CCFC05 /* VirtualGoodsShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B736D1D98741F00CCFC05 /* VirtualGoodsShopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C91B734E1D9872DC00CCFC05 /* RebeloperStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RebeloperStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91B73511D9872DC00CCFC05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C91B73531D9872DC00CCFC05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C91B73561D9872DC00CCFC05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C91B73581D9872DC00CCFC05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91B735B1D9872DC00CCFC05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C91B735D1D9872DC00CCFC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C91B73631D98741F00CCFC05 /* ConsumablesShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsumablesShopViewController.swift; sourceTree = "<group>"; };
+		C91B73641D98741F00CCFC05 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		C91B73651D98741F00CCFC05 /* GemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GemsViewController.swift; sourceTree = "<group>"; };
+		C91B73661D98741F00CCFC05 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C91B73671D98741F00CCFC05 /* NextLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLevelViewController.swift; sourceTree = "<group>"; };
+		C91B73681D98741F00CCFC05 /* NonConsumablesShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonConsumablesShopViewController.swift; sourceTree = "<group>"; };
+		C91B73691D98741F00CCFC05 /* RegularShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularShopViewController.swift; sourceTree = "<group>"; };
+		C91B736A1D98741F00CCFC05 /* RenewablesShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenewablesShopViewController.swift; sourceTree = "<group>"; };
+		C91B736B1D98741F00CCFC05 /* RenewableSubscriptionsShop1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenewableSubscriptionsShop1ViewController.swift; sourceTree = "<group>"; };
+		C91B736C1D98741F00CCFC05 /* RenewableSubscriptionsShop2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenewableSubscriptionsShop2ViewController.swift; sourceTree = "<group>"; };
+		C91B736D1D98741F00CCFC05 /* VirtualGoodsShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualGoodsShopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +74,56 @@
 		C91B73501D9872DC00CCFC05 /* RebeloperStore */ = {
 			isa = PBXGroup;
 			children = (
+				C91B73791D98760200CCFC05 /* Main */,
+				C91B737B1D98763C00CCFC05 /* ViewControllers */,
+				C91B737A1D98762800CCFC05 /* Assets */,
+				C91B737C1D98767F00CCFC05 /* Custom */,
+			);
+			path = RebeloperStore;
+			sourceTree = "<group>";
+		};
+		C91B73791D98760200CCFC05 /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				C91B73511D9872DC00CCFC05 /* AppDelegate.swift */,
-				C91B73531D9872DC00CCFC05 /* ViewController.swift */,
 				C91B73551D9872DC00CCFC05 /* Main.storyboard */,
-				C91B73581D9872DC00CCFC05 /* Assets.xcassets */,
 				C91B735A1D9872DC00CCFC05 /* LaunchScreen.storyboard */,
 				C91B735D1D9872DC00CCFC05 /* Info.plist */,
 			);
-			path = RebeloperStore;
+			name = Main;
+			sourceTree = "<group>";
+		};
+		C91B737A1D98762800CCFC05 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C91B73581D9872DC00CCFC05 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		C91B737B1D98763C00CCFC05 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C91B73631D98741F00CCFC05 /* ConsumablesShopViewController.swift */,
+				C91B73651D98741F00CCFC05 /* GemsViewController.swift */,
+				C91B73661D98741F00CCFC05 /* MainViewController.swift */,
+				C91B73671D98741F00CCFC05 /* NextLevelViewController.swift */,
+				C91B73681D98741F00CCFC05 /* NonConsumablesShopViewController.swift */,
+				C91B736B1D98741F00CCFC05 /* RenewableSubscriptionsShop1ViewController.swift */,
+				C91B736C1D98741F00CCFC05 /* RenewableSubscriptionsShop2ViewController.swift */,
+				C91B736D1D98741F00CCFC05 /* VirtualGoodsShopViewController.swift */,
+				C91B73691D98741F00CCFC05 /* RegularShopViewController.swift */,
+				C91B736A1D98741F00CCFC05 /* RenewablesShopViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C91B737C1D98767F00CCFC05 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				C91B73641D98741F00CCFC05 /* CustomButton.swift */,
+			);
+			name = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,12 +153,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Rebeloper;
 				TargetAttributes = {
 					C91B734D1D9872DC00CCFC05 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = R252PR8AVU;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,8 +200,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C91B73541D9872DC00CCFC05 /* ViewController.swift in Sources */,
+				C91B73721D98741F00CCFC05 /* NextLevelViewController.swift in Sources */,
 				C91B73521D9872DC00CCFC05 /* AppDelegate.swift in Sources */,
+				C91B736E1D98741F00CCFC05 /* ConsumablesShopViewController.swift in Sources */,
+				C91B73781D98741F00CCFC05 /* VirtualGoodsShopViewController.swift in Sources */,
+				C91B73761D98741F00CCFC05 /* RenewableSubscriptionsShop1ViewController.swift in Sources */,
+				C91B73701D98741F00CCFC05 /* GemsViewController.swift in Sources */,
+				C91B73731D98741F00CCFC05 /* NonConsumablesShopViewController.swift in Sources */,
+				C91B73741D98741F00CCFC05 /* RegularShopViewController.swift in Sources */,
+				C91B73771D98741F00CCFC05 /* RenewableSubscriptionsShop2ViewController.swift in Sources */,
+				C91B736F1D98741F00CCFC05 /* CustomButton.swift in Sources */,
+				C91B73711D98741F00CCFC05 /* MainViewController.swift in Sources */,
+				C91B73751D98741F00CCFC05 /* RenewablesShopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +246,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -181,7 +256,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -223,7 +303,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -231,7 +313,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -266,7 +353,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rebeloper.RebeloperStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -279,7 +367,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rebeloper.RebeloperStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -302,6 +391,7 @@
 				C91B73621D9872DC00CCFC05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
