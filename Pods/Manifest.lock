@@ -1,20 +1,31 @@
 PODS:
-  - KeychainAccess (4.1.0)
-  - SwiftyStoreKit (0.15.0)
+  - KeychainAccess (3.1.0)
+  - SwiftyStoreKit (0.11.0)
 
 DEPENDENCIES:
-  - KeychainAccess
-  - SwiftyStoreKit
+  - KeychainAccess (from `https://github.com/kishikawakatsumi/KeychainAccess.git`, tag `v3.1.0`)
+  - SwiftyStoreKit (from `https://github.com/bizz84/SwiftyStoreKit.git`, tag `0.11.0`)
 
-SPEC REPOS:
-  trunk:
-    - KeychainAccess
-    - SwiftyStoreKit
+EXTERNAL SOURCES:
+  KeychainAccess:
+    :git: https://github.com/kishikawakatsumi/KeychainAccess.git
+    :tag: v3.1.0
+  SwiftyStoreKit:
+    :git: https://github.com/bizz84/SwiftyStoreKit.git
+    :tag: 0.11.0
+
+CHECKOUT OPTIONS:
+  KeychainAccess:
+    :git: https://github.com/kishikawakatsumi/KeychainAccess.git
+    :tag: v3.1.0
+  SwiftyStoreKit:
+    :git: https://github.com/bizz84/SwiftyStoreKit.git
+    :tag: 0.11.0
 
 SPEC CHECKSUMS:
-  KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
-  SwiftyStoreKit: 033d06b6f87955405d3f844a18a7687c2438592a
+  KeychainAccess: d6fbf0cf06dbd76108d0358af53a231867a5b371
+  SwiftyStoreKit: 4e9df21b754e80d84e622a394c8162e0e02c8d61
 
-PODFILE CHECKSUM: e121799e3912e604193c59080c2c92bbe0a3ed48
+PODFILE CHECKSUM: 50c12a56fc039ca124747c1967588b41f2649a63
 
 COCOAPODS: 1.8.4

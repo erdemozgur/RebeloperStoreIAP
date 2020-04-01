@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FF079257128CAC2B98C0BCE /* Pods_RebeloperStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A41D1DB73EC58A3FD8FCF8 /* Pods_RebeloperStore.framework */; };
+		B4F766762434FF4A001AD3A2 /* RebeloperStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F766702434FF49001AD3A2 /* RebeloperStore.swift */; };
+		B4F7667A2434FF4A001AD3A2 /* RebeloperStoreSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F766752434FF4A001AD3A2 /* RebeloperStoreSetup.swift */; };
+		BAADB28B5BB1D3CF1B10C910 /* Pods_RebeloperStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6A25767FBDEB350B4AA245 /* Pods_RebeloperStore.framework */; };
 		C91B73521D9872DC00CCFC05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B73511D9872DC00CCFC05 /* AppDelegate.swift */; };
 		C91B73571D9872DC00CCFC05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91B73551D9872DC00CCFC05 /* Main.storyboard */; };
 		C91B73591D9872DC00CCFC05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91B73581D9872DC00CCFC05 /* Assets.xcassets */; };
@@ -26,9 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13C7FF9598B06EA850E51EC6 /* Pods-RebeloperStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebeloperStore.release.xcconfig"; path = "Target Support Files/Pods-RebeloperStore/Pods-RebeloperStore.release.xcconfig"; sourceTree = "<group>"; };
-		1B5B4D12DBFDCA75C43755B6 /* Pods-RebeloperStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebeloperStore.debug.xcconfig"; path = "Target Support Files/Pods-RebeloperStore/Pods-RebeloperStore.debug.xcconfig"; sourceTree = "<group>"; };
-		29A41D1DB73EC58A3FD8FCF8 /* Pods_RebeloperStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RebeloperStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		094958E4EE49C665F4D0BB9D /* Pods-RebeloperStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebeloperStore.debug.xcconfig"; path = "Target Support Files/Pods-RebeloperStore/Pods-RebeloperStore.debug.xcconfig"; sourceTree = "<group>"; };
+		9EE0A36737E72CCA895C7D77 /* Pods-RebeloperStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebeloperStore.release.xcconfig"; path = "Target Support Files/Pods-RebeloperStore/Pods-RebeloperStore.release.xcconfig"; sourceTree = "<group>"; };
+		B4F766702434FF49001AD3A2 /* RebeloperStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RebeloperStore.swift; path = RebeloperStore/RebeloperStore.swift; sourceTree = SOURCE_ROOT; };
+		B4F766752434FF4A001AD3A2 /* RebeloperStoreSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RebeloperStoreSetup.swift; path = RebeloperStore/RebeloperStoreSetup.swift; sourceTree = SOURCE_ROOT; };
 		C91B734E1D9872DC00CCFC05 /* RebeloperStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RebeloperStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91B73511D9872DC00CCFC05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C91B73561D9872DC00CCFC05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		C91B736B1D98741F00CCFC05 /* RenewableSubscriptionsShop1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenewableSubscriptionsShop1ViewController.swift; sourceTree = "<group>"; };
 		C91B736C1D98741F00CCFC05 /* RenewableSubscriptionsShop2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenewableSubscriptionsShop2ViewController.swift; sourceTree = "<group>"; };
 		C91B736D1D98741F00CCFC05 /* VirtualGoodsShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualGoodsShopViewController.swift; sourceTree = "<group>"; };
+		FC6A25767FBDEB350B4AA245 /* Pods_RebeloperStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RebeloperStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,19 +57,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FF079257128CAC2B98C0BCE /* Pods_RebeloperStore.framework in Frameworks */,
+				BAADB28B5BB1D3CF1B10C910 /* Pods_RebeloperStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		89966B2F5B548001BD2900C0 /* Frameworks */ = {
+		A1CF9657D05CC339E56B8234 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				29A41D1DB73EC58A3FD8FCF8 /* Pods_RebeloperStore.framework */,
+				FC6A25767FBDEB350B4AA245 /* Pods_RebeloperStore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4F766712434FF49001AD3A2 /* RebeloperStore */ = {
+			isa = PBXGroup;
+			children = (
+				B4F766702434FF49001AD3A2 /* RebeloperStore.swift */,
+				B4F766752434FF4A001AD3A2 /* RebeloperStoreSetup.swift */,
+			);
+			path = RebeloperStore;
 			sourceTree = "<group>";
 		};
 		C91B73451D9872DC00CCFC05 = {
@@ -73,8 +86,8 @@
 			children = (
 				C91B73501D9872DC00CCFC05 /* RebeloperStore */,
 				C91B734F1D9872DC00CCFC05 /* Products */,
-				D69E66B10EAC4C198D489FEE /* Pods */,
-				89966B2F5B548001BD2900C0 /* Frameworks */,
+				D84737E664E192CA43AF7363 /* Pods */,
+				A1CF9657D05CC339E56B8234 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +102,7 @@
 		C91B73501D9872DC00CCFC05 /* RebeloperStore */ = {
 			isa = PBXGroup;
 			children = (
+				B4F766712434FF49001AD3A2 /* RebeloperStore */,
 				C91B73791D98760200CCFC05 /* Main */,
 				C91B737B1D98763C00CCFC05 /* ViewControllers */,
 				C91B737A1D98762800CCFC05 /* Assets */,
@@ -141,13 +155,12 @@
 			name = Custom;
 			sourceTree = "<group>";
 		};
-		D69E66B10EAC4C198D489FEE /* Pods */ = {
+		D84737E664E192CA43AF7363 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1B5B4D12DBFDCA75C43755B6 /* Pods-RebeloperStore.debug.xcconfig */,
-				13C7FF9598B06EA850E51EC6 /* Pods-RebeloperStore.release.xcconfig */,
+				094958E4EE49C665F4D0BB9D /* Pods-RebeloperStore.debug.xcconfig */,
+				9EE0A36737E72CCA895C7D77 /* Pods-RebeloperStore.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -158,11 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C91B73601D9872DC00CCFC05 /* Build configuration list for PBXNativeTarget "RebeloperStore" */;
 			buildPhases = (
-				C35BBC35A0A7BB1D0B1461C2 /* [CP] Check Pods Manifest.lock */,
+				EA857958C808D4A9FD59164D /* [CP] Check Pods Manifest.lock */,
 				C91B734A1D9872DC00CCFC05 /* Sources */,
 				C91B734B1D9872DC00CCFC05 /* Frameworks */,
 				C91B734C1D9872DC00CCFC05 /* Resources */,
-				057FB004A32278B1B370ED9F /* [CP] Embed Pods Frameworks */,
+				CC43C1547A2EC3474683A494 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +209,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -223,7 +237,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		057FB004A32278B1B370ED9F /* [CP] Embed Pods Frameworks */ = {
+		CC43C1547A2EC3474683A494 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -243,7 +257,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RebeloperStore/Pods-RebeloperStore-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C35BBC35A0A7BB1D0B1461C2 /* [CP] Check Pods Manifest.lock */ = {
+		EA857958C808D4A9FD59164D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C91B73721D98741F00CCFC05 /* NextLevelViewController.swift in Sources */,
+				B4F7667A2434FF4A001AD3A2 /* RebeloperStoreSetup.swift in Sources */,
 				C91B73521D9872DC00CCFC05 /* AppDelegate.swift in Sources */,
 				C91B736E1D98741F00CCFC05 /* ConsumablesShopViewController.swift in Sources */,
 				C91B73781D98741F00CCFC05 /* VirtualGoodsShopViewController.swift in Sources */,
@@ -284,6 +299,7 @@
 				C91B736F1D98741F00CCFC05 /* CustomButton.swift in Sources */,
 				C91B73711D98741F00CCFC05 /* MainViewController.swift in Sources */,
 				C91B73751D98741F00CCFC05 /* RenewablesShopViewController.swift in Sources */,
+				B4F766762434FF4A001AD3A2 /* RebeloperStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +434,7 @@
 		};
 		C91B73611D9872DC00CCFC05 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B5B4D12DBFDCA75C43755B6 /* Pods-RebeloperStore.debug.xcconfig */;
+			baseConfigurationReference = 094958E4EE49C665F4D0BB9D /* Pods-RebeloperStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R252PR8AVU;
@@ -433,7 +449,7 @@
 		};
 		C91B73621D9872DC00CCFC05 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13C7FF9598B06EA850E51EC6 /* Pods-RebeloperStore.release.xcconfig */;
+			baseConfigurationReference = 9EE0A36737E72CCA895C7D77 /* Pods-RebeloperStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R252PR8AVU;

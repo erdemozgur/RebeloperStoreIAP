@@ -15,7 +15,7 @@ class ConsumablesShopViewController: UIViewController {
   @IBOutlet weak var consumable1Description: UILabel!
   @IBOutlet weak var consumable2Title: UILabel!
   @IBOutlet weak var consumable2Description: UILabel!
-  //test
+  
 
     override func viewDidLoad() {
         super.viewDidLoad()
