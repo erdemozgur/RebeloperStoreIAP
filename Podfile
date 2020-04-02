@@ -1,20 +1,21 @@
-# Uncomment this line to define a global platform for your project
-# platform :ios, '9.0'
+# Uncomment the next line to define a global platform for your project
+  platform :ios, '12.0'
 
-target 'RebeloperStore' do
-  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+target 'RebeloperStoreStarter' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for RebeloperStore
-	pod 'SwiftyStoreKit', :git => 'https://github.com/bizz84/SwiftyStoreKit.git', :tag => '0.11.0'
-  	pod 'KeychainAccess', :git => 'https://github.com/kishikawakatsumi/KeychainAccess.git', :tag => 'v3.1.0'
+  # Pods for RebeloperStoreStarter
 
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['SWIFT_VERSION'] = '4.0'
-    end
-  end
-end
+# Pods for Rebeloper Store Basic
+pod 'MerchantKit', '~> 0.8.1'
+
+# Pods for Rebeloper Store Pro
+#pod 'KeychainSwift', '~> 12.0.0'
+#pod 'BulletinBoard', '~> 2.0.2'
+
+# Pods for Example Project
+pod 'CollectionKit', '~> 2.2.0'
+pod 'TinyConstraints', '~> 3.3.0'
 
 end

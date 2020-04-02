@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-RebeloperStoreStarter/Pods-RebeloperStoreStarter-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CollectionKit/CollectionKit.framework
+${BUILT_PRODUCTS_DIR}/MerchantKit/MerchantKit.framework
+${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework

@@ -1,31 +1,26 @@
 PODS:
-  - KeychainAccess (3.1.0)
-  - SwiftyStoreKit (0.11.0)
+  - CollectionKit (2.2.0):
+    - CollectionKit/Core (= 2.2.0)
+  - CollectionKit/Core (2.2.0)
+  - MerchantKit (0.8.1)
+  - TinyConstraints (3.3.1)
 
 DEPENDENCIES:
-  - KeychainAccess (from `https://github.com/kishikawakatsumi/KeychainAccess.git`, tag `v3.1.0`)
-  - SwiftyStoreKit (from `https://github.com/bizz84/SwiftyStoreKit.git`, tag `0.11.0`)
+  - CollectionKit (~> 2.2.0)
+  - MerchantKit (~> 0.8.1)
+  - TinyConstraints (~> 3.3.0)
 
-EXTERNAL SOURCES:
-  KeychainAccess:
-    :git: https://github.com/kishikawakatsumi/KeychainAccess.git
-    :tag: v3.1.0
-  SwiftyStoreKit:
-    :git: https://github.com/bizz84/SwiftyStoreKit.git
-    :tag: 0.11.0
-
-CHECKOUT OPTIONS:
-  KeychainAccess:
-    :git: https://github.com/kishikawakatsumi/KeychainAccess.git
-    :tag: v3.1.0
-  SwiftyStoreKit:
-    :git: https://github.com/bizz84/SwiftyStoreKit.git
-    :tag: 0.11.0
+SPEC REPOS:
+  trunk:
+    - CollectionKit
+    - MerchantKit
+    - TinyConstraints
 
 SPEC CHECKSUMS:
-  KeychainAccess: d6fbf0cf06dbd76108d0358af53a231867a5b371
-  SwiftyStoreKit: 4e9df21b754e80d84e622a394c8162e0e02c8d61
+  CollectionKit: 5caa5341860d4c9b748ebfeaab97530b2d02c7c0
+  MerchantKit: 959448040fede1662a16109f3b548441a5269947
+  TinyConstraints: dbf7519aefc01ea59d62244300c7718aec68e280
 
-PODFILE CHECKSUM: 50c12a56fc039ca124747c1967588b41f2649a63
+PODFILE CHECKSUM: 3ce95ec5bf6e430d973194b4d0c5edf4392d8417
 
 COCOAPODS: 1.8.4
