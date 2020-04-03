@@ -1,26 +1,57 @@
 PODS:
-  - CollectionKit (2.2.0):
-    - CollectionKit/Core (= 2.2.0)
-  - CollectionKit/Core (2.2.0)
-  - MerchantKit (0.8.1)
-  - TinyConstraints (3.3.1)
+  - Bond (7.5.0):
+    - Differ (~> 1.3)
+    - ReactiveKit (~> 3.10)
+  - Differ (1.4.5)
+  - DuckUI (0.4.3):
+    - Bond (~> 7.5.0)
+    - JGProgressHUD (~> 2.0.3)
+    - Kingfisher (~> 5.7.0)
+    - Layoutless (~> 0.4.1)
+    - ReactiveKit (~> 3.12.3)
+    - RSKPlaceholderTextView (~> 5.0.1)
+    - TinyConstraints (~> 4.0.1)
+  - JGProgressHUD (2.0.4)
+  - KeychainSwift (16.0.1)
+  - Kingfisher (5.7.1)
+  - Layoutless (0.4.1)
+  - ReactiveKit (3.12.3)
+  - RSKPlaceholderTextView (5.0.2)
+  - SwiftyStoreKit (0.15.0)
+  - TinyConstraints (4.0.1)
 
 DEPENDENCIES:
-  - CollectionKit (~> 2.2.0)
-  - MerchantKit (~> 0.8.1)
-  - TinyConstraints (~> 3.3.0)
+  - DuckUI (~> 0.4.2)
+  - KeychainSwift (~> 16.0.1)
+  - SwiftyStoreKit (~> 0.15.0)
 
 SPEC REPOS:
   trunk:
-    - CollectionKit
-    - MerchantKit
+    - Bond
+    - Differ
+    - DuckUI
+    - JGProgressHUD
+    - KeychainSwift
+    - Kingfisher
+    - Layoutless
+    - ReactiveKit
+    - RSKPlaceholderTextView
+    - SwiftyStoreKit
     - TinyConstraints
 
 SPEC CHECKSUMS:
-  CollectionKit: 5caa5341860d4c9b748ebfeaab97530b2d02c7c0
-  MerchantKit: 959448040fede1662a16109f3b548441a5269947
-  TinyConstraints: dbf7519aefc01ea59d62244300c7718aec68e280
+  Bond: 6abbc33a4cf88e65a0f8b1ba8276ac34584ad897
+  Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
+  DuckUI: b9f0ccc6ed5af47a6585e77efcb0af65bce06aa8
+  JGProgressHUD: 62658b14e72cccf179efc7a13bcb54d30b92fc22
+  KeychainSwift: 4209611373ca4a098e09b1e547eebd87c544dcc4
+  Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
+  Layoutless: ba4810c682855373bddc78d9408cc82f970541d0
+  ReactiveKit: 36cae741b465d914e4db3a18ceac11355325eabe
+  RSKPlaceholderTextView: df72ca93edfac185b98f51cb85e445f54ce8a163
+  SwiftyStoreKit: 033d06b6f87955405d3f844a18a7687c2438592a
+  TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
 
-PODFILE CHECKSUM: 3ce95ec5bf6e430d973194b4d0c5edf4392d8417
+PODFILE CHECKSUM: 20c95ba67a7abf33c318bf7dc8e2f16e394c9a6b
 
 COCOAPODS: 1.8.4

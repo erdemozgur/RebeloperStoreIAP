@@ -1,0 +1,6 @@
+framework module Pods_InAppPurchaces {
+  umbrella header "Pods-InAppPurchaces-umbrella.h"
+
+  export *
+  module * { export * }
+}
